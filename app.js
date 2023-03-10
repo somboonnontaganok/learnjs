@@ -1,5 +1,3 @@
-function Hello() {
-    alert('Hello, World!');
-    document.getElementById("message").innerHTML = "The button has been clicked";
-    console.log("The button has been clicked");
-}
+let email = 'nontaganok@gmail.com';
+let findletter = email.includes('@');
+console.log(findletter);
