@@ -1,0 +1,17 @@
+let addInput = document.createElement("add-input"); 
+const delBtn = document.getElementsByClassName("delete");
+console.log(delBtn);
+
+const addLi = () => {
+    let list = document.createElement("li"); // Create
+    list.innerHTML = `<span class='name'>${addInput.value}</span><span class='delete' onclick="delLi()"></span>`;
+    console.log(list);
+    document.querySelector("#reading-list ul").appendChild(list);
+}
+
+const delLi = () => {
+    let parent = event.target.parentNode;
+    console.log(parent);
+    parent.remove();
+}
+
