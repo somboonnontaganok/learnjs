@@ -15,4 +15,10 @@ let second = d.getSeconds();
 // console.log(`${hour}:${minute}:${second}`);
 let y = hour + ':' + minute + ':'+ second; */
 
-
+'use strict';
+function logThis() {
+    this.desc='logger';
+    console.log(this.desc); // logger
+    console.log(this) // print logThis { desc: 'logger' }
+}
+new logThis();
